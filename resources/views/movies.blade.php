@@ -7,13 +7,16 @@
     <h1>Movies</h1>
     <div class="row">
         @foreach ($movies as $movie)
-        <div class="col-4">
-            <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+        <div class="col-6">
+          <div class="card text-center py-3 mt-5" style="width: 38rem;">
             <div class="card-body">
-            <h5 class="card-title">"{{$movie->title}}"</h5>
-            <h5 class="card-title">"{{$movie->original_title}}"</h5>
-            <p class="card-text"></p>
+             <h3 class="card-title">{{$movie->title}}</h3>
+             <h4>Original Title: {{$movie->original_title}}</h4>
+             <h5>Nationality: {{$movie->nationality}}</h5>
+             <p>Date: {{$movie->date}}</p>
+             <p>Rating: {{$movie->vote}}</p>
+            </div>
+          </div>
         </div>
         @endforeach
     </div>
