@@ -21,3 +21,5 @@ Route::get('/about', [PageController::class, 'about'])->name('about');
 
 
 Route::get('/movies', [PageController::class, 'movies'])->name('movies');
+
+Route::get('movies_details/{id}', [PageController::class, 'details'])->name('details');
