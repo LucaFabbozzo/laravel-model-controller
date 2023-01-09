@@ -8,9 +8,9 @@
     <div class="row">
         @foreach ($movies as $movie)
         <div class="col-6">
-          <div class="card p-5 mt-5" style="width: 38rem;">
+          <div class="card p-5 my-5" style="width: 38rem;">
             <div class="card-body">
-             <a href="{{route('details', $movie->id)}}"><h2 class="card-title">{{$movie->title}}</h2></a>
+             <a href="{{route('details', $movie->id)}}"><h2 class="card-title text-uppercase">{{$movie->title}}</h2></a>
              <h4>Original Title: {{$movie->original_title}}</h4>
              <h5>Nationality: {{$movie->nationality}}</h5>
              <p>Date: {{$movie->date}}</p>

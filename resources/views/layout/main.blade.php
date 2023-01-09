@@ -31,7 +31,7 @@ BONUS
 
 </head>
 
-<body>
+<body class="bg-dark">
 
     @include('partials.navbar')
 

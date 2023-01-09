@@ -16,6 +16,10 @@ class PageController extends Controller
         return view('about');
     }
 
+    public function contacts() {
+        return view('contacts');
+    }
+
     public function movies() {
 
         $movies = Movie::all();
