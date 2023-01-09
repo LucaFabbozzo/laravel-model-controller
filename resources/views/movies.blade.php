@@ -8,9 +8,9 @@
     <div class="row">
         @foreach ($movies as $movie)
         <div class="col-6">
-          <div class="card text-center py-3 mt-5" style="width: 38rem;">
+          <div class="card p-5 mt-5" style="width: 38rem;">
             <div class="card-body">
-             <h3 class="card-title">{{$movie->title}}</h3>
+             <h2 class="card-title">{{$movie->title}}</h2>
              <h4>Original Title: {{$movie->original_title}}</h4>
              <h5>Nationality: {{$movie->nationality}}</h5>
              <p>Date: {{$movie->date}}</p>
