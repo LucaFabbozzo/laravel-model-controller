@@ -4,7 +4,7 @@
 @section('content')
 
 <div class="container">
-    <h1>Movies</h1>
+    <h1 class="text-center text-uppercase">Movies</h1>
     <div class="row">
         @foreach ($movies as $movie)
         <div class="col-6">
